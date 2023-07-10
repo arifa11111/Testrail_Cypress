@@ -9,5 +9,5 @@ module.exports = defineConfig({
     viewportHeight:800,
     viewportWidth:1300
   },
-  chromeWebSecurity: false
+  chromeWebSecurity: false,
 });

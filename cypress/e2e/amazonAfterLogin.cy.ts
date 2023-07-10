@@ -18,6 +18,12 @@ describe('Amazon Application testing After login',()=>{
     it('Enable prime option for items', ()=> {
         LoginHands.clickOnLoginBtn()
         LoginHands.loginUsingCrediantials()
+
+    })
+
+
+    it('prime  item', ()=> {
+    
         PrimeHands.clickOnSecondItemGrid()
         PrimeHands.clickOnPrimeCheckBox()
         PrimeHands.getDeliveryDateForItem()
@@ -30,10 +36,13 @@ describe('Amazon Application testing After login',()=>{
         DeliveryFormHands.selectFirstItemAndOrder()
 
         DeliveryFormHands.addNewAddressToDelivery()
+        
+    })
+
+    it('Add payment and address for ordered item', ()=> {
         DeliveryFormEyes.addressFormPopUp()
         DeliveryFormHands.fillTheAddressFormAndSubmit()
         DeliveryFormEyes.verifyEnteredAddress()
-
         DeliveryFormHands.selectNetBankingOption()
         DeliveryFormHands.selectBank()
         DeliveryFormEyes.verifyBank()
