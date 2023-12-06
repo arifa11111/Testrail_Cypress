@@ -6,10 +6,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.11.0"
+    "cypress": "^10.11.0",
+    "salty-cypress-testrail-reporter": "^1.4.0",
+    "typescript": "^5.3.2"
   },
   "scripts": {
-    "cypress": "cypress open --config-file cypress.config.js",
-    "cypress:run": "cypress run"
+    "cypress": "cypress open",
+    "cypress:run": "cypress run cypress/e2e/amazonBeforeLogin.cy.ts --reporter salty-cypress-testrail-reporter"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
+
